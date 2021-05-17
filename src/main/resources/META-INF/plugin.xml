@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>deno-dx</id>
+    <name>dx</name>
+    <description>a tool and task runner for writing better scripts with Deno</description>
+    <vendor email="libing.chen@gmail.com">linux_china</vendor>
+
+    <!-- Product and plugin compatibility requirements -->
+    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>JavaScript</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <iconProvider implementation="org.jetbrains.plugins.dx.TaskfileIconProvider"/>
+        <codeInsight.lineMarkerProvider language="JavaScript" implementationClass="org.jetbrains.plugins.dx.DxRunnerMarkerProvider"/>
+        <defaultLiveTemplates file="/liveTemplates/dx.xml"/>
+    </extensions>
+
+</idea-plugin>
