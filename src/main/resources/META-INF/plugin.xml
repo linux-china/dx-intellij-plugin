@@ -14,6 +14,7 @@
         <iconProvider implementation="org.jetbrains.plugins.dx.TaskfileIconProvider"/>
         <codeInsight.lineMarkerProvider language="JavaScript" implementationClass="org.jetbrains.plugins.dx.DxRunnerMarkerProvider"/>
         <defaultLiveTemplates file="/liveTemplates/dx.xml"/>
+        <languageInjector implementation="org.jetbrains.plugins.dx.DxShellLanguageInjector"/>
     </extensions>
 
 </idea-plugin>
