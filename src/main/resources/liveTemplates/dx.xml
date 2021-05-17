@@ -1,0 +1,7 @@
+<templateSet group="dx">
+  <template name="dxi" value="import {$, $o, $a, cd, pwd, question, glob, echo, cat,sleep,printf} from 'https://denopkg.com/linux-china/dx/mod.ts';&#10;$END$&#10;" description="dx import" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
