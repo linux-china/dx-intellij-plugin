@@ -11,7 +11,8 @@
     <depends>JavaScript</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <iconProvider implementation="org.jetbrains.plugins.dx.TaskfileIconProvider"/>
+        <iconProvider order="first" implementation="org.jetbrains.plugins.dx.TaskfileIconProvider"/>
+        <fileIconProvider order="first" implementation="org.jetbrains.plugins.dx.TaskfileFileIconProvider"/>
         <codeInsight.lineMarkerProvider language="JavaScript" implementationClass="org.jetbrains.plugins.dx.DxRunnerMarkerProvider"/>
         <defaultLiveTemplates file="/liveTemplates/dx.xml"/>
         <languageInjector implementation="org.jetbrains.plugins.dx.DxShellLanguageInjector"/>
