@@ -8,11 +8,14 @@ import javax.swing.Icon
 
 
 class TaskfileIconProvider : IconProvider() {
+    private val taskFiles = arrayOf("Taskfile.ts", "Taskfile.js")
+    private val icon = IconLoader.getIcon("/dx/icon16.png")
+
     override fun getIcon(psiElement: PsiElement, flags: Int): Icon? {
         val containingFile: PsiFile = psiElement.containingFile
         val fileName = containingFile.name;
-        return if (fileName == "Taskfile.ts" || fileName == "Taskfile.js") {
-            IconLoader.getIcon("/dx/icon16.png")
+        return if (taskFiles.contains(fileName)) {
+            icon
         } else null
     }
 }
