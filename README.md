@@ -9,3 +9,4 @@ dx plugin can supply the feature to run task in JetBrains IDEs.
 # References
 
 * dx: https://github.com/linux-china/dx/
+* Gradle IntelliJ Plugin: https://lp.jetbrains.com/gradle-intellij-plugin/
