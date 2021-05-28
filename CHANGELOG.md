@@ -2,6 +2,10 @@
 
 # dx plugin Changelog
 
+## [0.1.1]
+### Changes
+- Intellij Platform 2021.2 support
+
 ## [0.1.0]
 ### Features
 - Icon support for Taskfile.js/Taskfile.ts
