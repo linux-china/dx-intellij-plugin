@@ -16,6 +16,8 @@
         <codeInsight.lineMarkerProvider language="JavaScript" implementationClass="org.jetbrains.plugins.dx.DxRunnerMarkerProvider"/>
         <defaultLiveTemplates file="/liveTemplates/dx.xml"/>
         <languageInjector implementation="org.jetbrains.plugins.dx.DxShellLanguageInjector"/>
+        <languageInjector implementation="org.jetbrains.plugins.dx.DxRegexpLanguageInjector"/>
+        <languageInjector implementation="org.jetbrains.plugins.dx.DxAwkLanguageInjector"/>
     </extensions>
 
 </idea-plugin>
