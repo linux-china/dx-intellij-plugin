@@ -22,7 +22,7 @@ abstract class AbstractLanguageInjector : LanguageInjector {
                     val tag = taggedTemplate.tag as JSReferenceExpression
                     val tagName = tag.text
                     if (getTags().contains(tagName)) {
-                        injectionPlacesRegistrar.addPlace(getInjectionLanguage()!!, TextRange.create(0, host.getTextLength()), "", "");
+                        injectionPlacesRegistrar.addPlace(getInjectionLanguage()!!, TextRange.create(1, host.getTextLength() - 1), "", "");
                     }
                 }
             }
