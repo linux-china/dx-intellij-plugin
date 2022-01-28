@@ -2,6 +2,10 @@
 
 # dx plugin Changelog
 
+## [0.2.2]
+### Changes
+- Intellij Platform 2022.1 support
+
 ## [0.2.0]
 ### Changes
 - Add RegExp and AWK language injection support for grep and awk functions
